@@ -9,7 +9,7 @@ const Login: React.FC = () => {
   const [ messageApi, contextHolder] = message.useMessage();
   const loginUser = async (credentials: Credential) => {
     console.log('Received values of form: ', credentials);
-    return
+    // return
     const { data } = await login(credentials);
     return data;
   };
